@@ -1,0 +1,4 @@
+{
+  "verify_success": "Two-factor auth enabled",
+  "verify_failed": "Invalid token, verification failed"
+}

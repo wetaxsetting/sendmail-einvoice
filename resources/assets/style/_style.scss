@@ -1,0 +1,628 @@
+html {
+	overflow-y: hidden;
+}
+
+@font-face {
+	font-family: 'Gmarket Sans';
+	src: url('~assets/fonts/GmarketSansTTFBold.ttf') format('truetype');
+}
+
+/* .btnGradient {
+	background: rgb(1,196,254);
+	background: linear-gradient(90deg, rgba(1,196,254,1) 0%, rgba(0,125,254,1) 100%);
+  }
+  .primary-gradient {
+	  background: rgb(1,196,254);
+	  background: linear-gradient(90deg, rgba(1,196,254,1) 0%, rgba(0,125,254,1) 100%);
+  } */
+.menuGroupBg {
+	background-color: #F0F0F0 !important;
+	border-radius: 20px !important;
+}
+
+.squareBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	box-sizing: border-box;
+	border-left: 1px solid #bcc6cf;
+	background-color: transparent;
+}
+
+/* Vuetify Custom Styles */
+#app {
+	.v-application {
+		#left-navigation-drawer {
+			.v-navigation-drawer__content {
+				overflow-y: overlay;
+			}
+
+			::-webkit-scrollbar-track {
+				background-color: transparent;
+			}
+
+			::-webkit-scrollbar {
+				width: 8px;
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			:hover::-webkit-scrollbar {
+				display: block;
+				visibility: visible;
+				opacity: 0.5;
+			}
+
+			box-shadow: 8px 8px 43px rgb(0 0 0 / 15%);
+
+			.v-list-item--link:before {
+				background-color: transparent !important;
+			}
+		}
+
+		.list-item-color {
+			list-style: none;
+			padding: 0 !important;
+			margin: 0;
+
+			li {
+				&.active {
+					border-radius: 50% !important;
+					box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5) !important;
+				}
+			}
+		}
+
+		.v-input:not(.searchMenuTextField) {
+			font-size: 12px !important;
+		}
+
+		//.v-text-field.v-input--dense .v-label
+		.v-text-field:not(.searchMenuTextField) {
+			.v-text-field__slot {
+				.v-input {
+					font-size: 12px !important;
+				}
+
+				.v-label {
+					font-size: 12px !important;
+					color: rgba(0, 0, 0, .87) !important;
+					top: 6px !important;
+				}
+
+				input[type="number"],
+				input[type="tel"] {
+					text-align: right;
+				}
+			}
+		}
+
+		.v-text-field--outlined:not(.searchMenuTextField) {
+			.v-text-field__slot {
+				.v-input {
+					font-size: 12px !important;
+				}
+
+				.v-label {
+					font-size: 12px !important;
+					color: rgba(0, 0, 0, .87) !important;
+					top: 9px !important;
+				}
+
+				input[type="number"],
+				input[type="tel"] {
+					text-align: right;
+				}
+			}
+
+			&.v-select {
+				.v-select__slot {
+					.v-label {
+						top: 9px !important;
+						font-size: 12px !important;
+					}
+				}
+			}
+		}
+
+		.v-select {
+			.v-select__selection--disabled {
+				color: gray;
+			}
+
+			.v-select__slot {
+				.v-label {
+					top: 6px;
+					font-size: 12px !important;
+				}
+			}
+		}
+
+		.numberLeft {
+			.v-text-field {
+				.v-text-field__slot {
+					.v-input {
+						font-size: 12px !important;
+					}
+
+					input[type="number"] {
+						text-align: left !important;
+					}
+				}
+			}
+		}
+
+		.numberRight {
+			.v-text-field {
+				.v-text-field__slot {
+					.v-input {
+						font-size: 12px !important;
+					}
+
+					input {
+						text-align: right !important;
+					}
+				}
+			}
+		}
+
+		#mainWrapper {
+			background-color: #F2F7FF;
+		}
+
+		/* #appBar {
+			  .v-toolbar__content{
+				  padding-left: 0;
+				  padding-right: 0;
+			  }
+		  } */
+		#baseDatePicker {
+			.v-picker {
+				.v-picker__body {
+					div {
+						.v-date-picker-header {
+							width: 100%;
+							background: url("~assets/images/theme/2/calBg.png") left top repeat-y;
+							background-size: 100%;
+							text-align: center;
+
+							button {
+								color: #fff;
+							}
+
+							.v-date-picker-header__value:not(.v-date-picker-header__value--disabled) button:not(:hover):not(:focus) {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.v-select.v-text-field--outlined:not(.v-text-field--single-line).v-input--dense .v-select__selections {
+			display: contents;
+		}
+
+		.row:not([class*="my-"]):not([class*="ma-"]):not([class*="mt-"]):not([class*="mb-"]) {
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+
+		#overlayScrollWrapper {
+
+			.v-sheet::-webkit-scrollbar-track,
+			.v-virtual-scroll::-webkit-scrollbar-track {
+				background-color: transparent;
+			}
+
+			.v-sheet::-webkit-scrollbar,
+			.v-virtual-scroll::-webkit-scrollbar {
+				width: 5px;
+				height: 5px;
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.v-sheet:hover::-webkit-scrollbar,
+			.v-virtual-scroll:hover::-webkit-scrollbar {
+				display: block;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		#tmvNavigationDrawer {
+			::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		p {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+div.menuable__content__active {
+	z-index: 300 !important;
+}
+
+/* 
+  div.v-dialog__content--active {
+	  z-index: 401!important;
+  }
+  
+  div.v-overlay--active {
+	  z-index: 400!important;
+  }
+  
+  div.menuable__content__active {
+	  z-index: 500!important;
+  }
+    /*
+	
+
+  /* #Vuetify Custom Styles */
+
+/* DevExtreme Custom Styles */
+.dx-datagrid-summary-item {
+	color: red !important;
+}
+
+// .dx-datagrid-headers .dx-header-row {
+// 	background-color: #435EBE;
+// 	color: #fff;
+// }
+// Selection Change Color
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused)>td {
+	background-color: rgb(209, 209, 209); // #ff5252
+	color: #000;
+}
+
+// Focus Row Color
+.dx-datagrid .dx-datagrid-rowsview .dx-row-focused.dx-data-row:not(.dx-edit-row)>td:not(.dx-focused) {
+	background-color: rgb(209, 209, 209);
+	color: #000;
+	border-bottom: none;
+}
+
+/* .dx-datagrid .dx-datagrid-header-panel {  
+	display: none !important;  
+  } */
+.dx-checkbox.dx-state-readonly .dx-checkbox-icon {
+	border-color: #000;
+	background-color: #fff;
+}
+
+.dx-tab {
+	padding: 0 !important;
+}
+
+.dx-revert-button {
+	display: none !important;
+}
+
+.dx-popup-wrapper {
+	.dx-overlay-content {
+		// border-radius: 32px;
+	}
+
+	.dx-calendar {
+		.dx-calendar-caption-button {
+			// background: url("~assets/images/theme/2/calBg.png") left top repeat-y;
+			background-size: 100%;
+			text-align: center;
+			margin: 0 20px 0 20px;
+
+			.dx-button-content {
+				.dx-button-text {
+					// color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.dx-dropdownlist-popup-wrapper {
+	.dx-overlay-content {
+		border-radius: 0;
+	}
+}
+
+.dx-calendar-navigator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	// background: url("~assets/images/theme/2/calBg.png") left top repeat-y;
+	background-size: 100%;
+	text-align: center;
+
+	.dx-button {
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	a[aria-label="chevronleft"] {
+		margin-left: 15px !important;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+
+		.dx-button-content {
+			.dx-icon {
+				// color: #fff;
+			}
+		}
+	}
+
+	a[aria-label="chevronright"] {
+		margin-right: 15px !important;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+
+		.dx-button-content {
+			.dx-icon {
+				// color: #fff;
+			}
+		}
+	}
+
+	.dx-button-back.dx-state-hover .dx-button-content,
+	.dx-button-normal.dx-state-hover .dx-button-content {
+		width: 100%;
+		// background: url("~assets/images/theme/2/calBg.png") left top repeat-y;
+		background-size: 100%;
+		text-align: center;
+		border-radius: 0;
+	}
+}
+
+.dx-datebox-wrapper-calendar {
+	.dx-popup-content {
+		margin: 0;
+	}
+
+	.dx-calendar {
+		margin: 0 0 7px 0;
+	}
+}
+
+/* .dx-button-back.dx-state-hover .dx-button-content, 
+  .dx-button-normal.dx-state-hover .dx-button-content {
+	  width: 100%;
+	  background: url("~assets/images/theme/2/calBg.png") left top repeat-y;
+	  background-size: 100%;
+	  text-align: center;
+	  border-radius: 0;
+  } */
+
+.dxTreeListCustomColor {
+	.dx-treelist-container {
+		background-color: #50697F;
+		color: white;
+
+		.dx-empty {
+			.dx-treelist-nodata {
+				color: white;
+			}
+		}
+	}
+}
+
+/* .dx-item-content .dx-toolbar-item-content {
+	  .dx-button-normal.dx-state-hover {
+		  background: none;
+	  }
+  } */
+
+/* #DevExtreme Custom Styles */
+
+/* Vue-notifyjs Custom Styles */
+.vue-notifyjs {
+	.alert {
+		z-index: 999;
+		// top: 50% !important;
+	}
+
+	.alert[data-notify="container"] {
+		width: 500px !important;
+	}
+}
+
+/* #Vue-notifyjs Custom Styles */
+
+/* Others Styles */
+.pointer {
+	cursor: pointer;
+}
+
+.no-drop {
+	cursor: no-drop;
+}
+
+.empty-cell {
+	cursor: pointer;
+	min-height: 17px;
+	// padding: 5px;
+}
+
+.borderBottom {
+	border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.cell-truncate {
+	max-width: 1px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.w-20 {
+	width: 20% !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.h-100 {
+	height: 100% !important;
+}
+
+/* Scroll Bar Custom */
+/* width */
+::-webkit-scrollbar {
+	display: block;
+	height: 10px;
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: grey;
+}
+
+/* #Scroll Bar Custom */
+.overflow-y-80vh-container {
+	width: 100%;
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+
+.dx-header-row>td {
+	text-align: center !important;
+}
+
+.dx-data-row .cell-align-right {
+	text-align: right !important;
+}
+
+.dx-header-row .cell-align-right {
+	text-align: center !important;
+}
+
+.dx-data-row .cell-align-left {
+	text-align: left !important;
+}
+
+.dx-header-row .cell-align-left {
+	text-align: center !important;
+}
+
+.dx-data-row .cell-align-center {
+	text-align: center !important;
+}
+
+.dx-header-row .cell-align-center {
+	text-align: center !important;
+}
+
+.btn {
+	min-width: 100px;
+	min-height: 30px;
+	max-width: 100px;
+	max-height: 30px;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row>td,
+.dx-datagrid-content .dx-datagrid-table .dx-row>tr>td {
+	vertical-align: middle;
+}
+
+.dx-column-lines .v-input__slot {
+	margin-bottom: 0px !important;
+	min-height: 16px !important;
+	display: flex !important;
+	align-items: center !important;
+}
+
+.dx-column-lines .v-text-field__details {
+	display: none !important;
+}
+
+.dx-column-lines .v-text-field {
+	padding-top: 0px;
+}
+
+.dx-widget input,
+.dx-widget textarea {
+	line-height: 1.75rem;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.overflow-y-auto {
+	overflow-y: auto;
+}
+
+.overflow-x-scroll {
+	overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+.overflow-x-overlay {
+	overflow-x: overlay;
+}
+
+.overflow-y-overlay {
+	overflow-y: overlay;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+
+.word-break {
+	word-break: break-all;
+}
+
+.jqx-grid-cell-selected {
+	background-color: #d1d1d1 !important;
+}
+
+.notifications.vue-notifyjs {
+	z-index: 9999 !important;
+}
+
+.jqx-grid-column-header>div {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.jqx-grid-column-header>div>div {
+	white-space: normal !important;
+	line-height: inherit !important;
+}
+
+.jqx-grid-column-header>div>div[role="checkbox"] {
+	position: inherit !important;
+	margin: auto !important;
+}
+
+
+.jqx-grid-column-header>div>div>span {
+	//white-space: normal !important;
+	line-height: inherit !important;
+}

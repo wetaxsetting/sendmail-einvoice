@@ -1,0 +1,12 @@
+{
+  "request_successful": "Request successfully!",
+  "request_failed": "Request failed!",
+  "create_successful": "Create successfully!",
+  "create_failed": "Create failed!",
+  "update_successful": "Update successfully!",
+  "update_failed": "Update failed!",
+  "delete_successful": "Delete successfully!",
+  "delete_failed": "Delete failed!",
+  "norecord": "No record found",
+  "error_occur": "Error occurs!"
+}

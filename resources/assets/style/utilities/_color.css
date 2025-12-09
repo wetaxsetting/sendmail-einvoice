@@ -1,0 +1,71 @@
+:root {
+  --primary-color: 0, 96, 190;
+  --primary-color-start: 1, 196, 254;
+  --primary-color-stop: 1, 125, 254;
+  --primary-color-2: 13, 111, 213; 
+  --primary-color-3: 29, 44, 97;
+  --grid-header-color: 255, 255, 255
+}
+
+/* Gradient Selected Menu */
+/* .activeMenu {
+  background: linear-gradient(118deg, rgba(var(--primary-color), 1), rgba(var(--primary-color), .7));
+  box-shadow: 0 0 10px 1px rgba(var(--primary-color), .7);
+} */
+
+.primary-gradient {
+	background: rgb(var(--primary-color-start));
+	background: linear-gradient(90deg, rgba(var(--primary-color-start)) 0%, rgba(var(--primary-color-stop)) 100%);
+}
+
+.primary-radial-gradient {
+  background: radial-gradient(rgba(var(--primary-color-start)), rgba(var(--primary-color-stop)));
+}
+
+.jqx-widget-header {
+  background: rgb(var(--primary-color-start)) !important;
+  /* background: linear-gradient(90deg, rgba(var(--primary-color-start)) 0%, rgba(var(--primary-color-stop)) 100%) !important; */
+}
+
+.jqx-widget-header .jqx-widget-header,
+.jqx-widget-header .jqx-grid-columngroup-header {
+  /* background: transparent !important; */
+  color: rgb(var(--grid-header-color)) !important;
+  border-color: rgb(var(--grid-header-color)) !important;
+}
+
+.primaryTextFour {
+  color: rgb(var(--grid-header-color)) !important;
+}
+
+.primaryBg {
+  background-color: rgb(var(--primary-color)) !important
+}
+
+.primaryText {
+  color: rgb(var(--primary-color)) !important
+}
+
+.primaryTextTwo {
+  color: rgb(var(--primary-color-2)) !important
+}
+
+.primaryTextThree {
+  color: rgb(var(--primary-color-3)) !important
+}
+
+.dx-datagrid-headers .dx-header-row {	
+  background: rgba(var(--primary-color-start)) !important;	
+  background: linear-gradient(90deg, rgba(var(--primary-color-start)) 0%, rgba(var(--primary-color-stop)) 100%) !important;	
+  color: rgb(var(--grid-header-color)) !important;
+}
+
+.box-conatiner {	
+  background: rgb(var(--primary-color)) !important;	
+  background-color: rgb(var(--primary-color)) !important;	
+}
+
+.login100-form-btn {	
+  background: rgb(var(--primary-color)) !important;	
+  background: linear-gradient(90deg, rgba(var(--primary-color-start)) 0%, rgba(var(--primary-color-stop)) 100%) !important;
+}

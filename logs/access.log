@@ -1,0 +1,3 @@
+118.69.191.0 - - [14/Dec/2019:16:07:27 +0700] "GET /.well-known/pki-validation/1B0965880E01D2BBA5FBF76B5D080876.txt HTTP/1.1" 200 111 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36"
+91.199.212.132 - - [14/Dec/2019:16:07:38 +0700] "GET /.well-known/pki-validation/1B0965880E01D2BBA5FBF76B5D080876.txt HTTP/1.1" 200 111 "-" "COMODO DCV"
+118.69.191.0 - - [14/Dec/2019:16:08:17 +0700] "GET / HTTP/1.1" 403 189 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36"
